@@ -1,0 +1,149 @@
+/*
+  The page supports both dark and light color schemes,
+  and the page author prefers dark.
+*/
+/* Light / Dark Mode */
+:root {
+  color-scheme: light dark;
+  --color-1: #565472;
+  --color-2: #212121;
+}
+:any-link {color: var(--link-color);}
+body, nav {--duration: 0.5s; --timing: ease; background-color: var(--background-color); color: var(--color); transition: color var(--duration) var(--timing), background-color var(--duration) var(--timing);}
+h1 {color: var(--main-headline-color);}
+/*button,
+input {outline: solid 1px var(--color);}*/
+button {color: var(--accent-color); background: var(--accent-background-color);}
+
+
+dark-mode-toggle {
+  --dark-mode-toggle-light-icon: url(assets/img/arctic-fox.svg);
+  --dark-mode-toggle-dark-icon: url(assets/img/arctic-fox.svg);
+  height: 50px;    
+/*  
+  position: absolute;
+  top: 5em;
+  right: calc(50% - 4.5em);*/  
+}
+
+.btn-theme{border: 2px solid var(--color-1); background-color: var(--color-1); color: var(--white);}
+.btn-theme:hover{color: var(--white)}
+.btn-theme-outline{border: 2px solid var(--color-1); color: var(--white); background-color: transparent;}
+.btn-theme-outline:hover{color: var(--white)}
+.abcRioButtonLightBlue{border-radius: .25rem!important}
+.form-outline .form-control~.form-notch .form-notch-leading{border-radius: 0}
+/*img[src*=".svg"]:hover {
+  filter: var(--icon-filter_hover);
+}*/
+/** {border: 1px solid red}*/
+.alert{width: fit-content; position: absolute; margin: 0 auto; top: 5.6em; left: 0; right: 0; bottom: 0; height: fit-content}
+.triangle {
+	--duration: 0.5s; --timing: ease;
+	transition: color var(--duration) var(--timing), background-color var(--duration) var(--timing);
+	position: absolute;
+	top: -1em;
+	right: 50%;
+	text-align: left;
+}
+.triangle:before,
+.triangle:after {
+	content: '';
+	position: absolute;
+	background-color: inherit;
+}
+.triangle,
+.triangle:before,
+.triangle:after {
+	width:  15px;
+	height: 15px;
+	border-top-right-radius: 30%;
+}
+
+.triangle {
+	transform: rotate(-60deg) skewX(-30deg) scale(1,.866);
+}
+.triangle:before {
+	transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
+}
+.triangle:after {
+	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
+}
+.card{background-color: var(--background-color);}
+
+i.fa.fa-angle-left{position: absolute; left:0; top: 30%; font-size: 3rem; color: #565472}
+i.fa.fa-angle-right{position: absolute; right:0; top: 30%; font-size: 3rem; color: #565472}
+.color-1 {color: #565472!important}
+/*mouse*/
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+.icon-scroll {
+  width: 30px;
+  height: 50px;
+  margin-left: -20px;
+  bottom: 50px;
+  margin-top: -35px;
+  border: 2px solid #565472;
+  border-radius: 25px;
+  display: block;
+}
+@media (max-width: 768px) {
+  .icon-scroll {
+    position: relative;
+    display: none;
+  }
+  .illustration{
+  	max-width: 70%!important;
+  }
+}
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #565472;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+          animation-name: scroll;
+}
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+}
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(26px);
+  }
+}
+/*scrollbar*/
+.scrollbar::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.0);
+	background-color: transparent;
+	border-radius: 10px;}
+.scrollbar::-webkit-scrollbar{
+	width: 8px;
+	background-color: transparent;}
+.scrollbar::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background: #565472}
+#nav a {opacity: 0.7; transition: opacity .3s ease}
+#nav a.active {opacity: 1; color: #565472;}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{background: #565472; transition: .3s ease}
+.card-hover {transition: .3s ease}
+.item:hover .card-hover {transform: scale(1.1);} 

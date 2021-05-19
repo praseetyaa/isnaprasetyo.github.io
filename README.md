@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+# Isna Prasetyo
 
-You can use the [editor on GitHub](https://github.com/praseetyaa/isnaprasetyo.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+## Introduction
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+> An introduction or lead on what problem you're solving. Answer the question, "Why does someone need this?"
 
-### Markdown
+## Code Samples
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+> You've gotten their attention in the introduction, now show a few code examples. So they get a visualization and as a bonus, make them copy/paste friendly.
 
-```markdown
-Syntax highlighted code block
+## Installation
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/praseetyaa/isnaprasetyo.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+> The installation instructions are low priority in the readme and should come at the bottom. The first part answers all their objections and now that they want to use it, show them how.
