@@ -1,8 +1,8 @@
 /* light.css: 👉 dark-on-light */
 /* light.css */
 :root {
-  --background-color: rgb(251, 251, 251);
-  --color: rgb(5, 5, 5);
+  --background-color: var(--bs-light);
+  --color: var(--bs-dark);
   --link-color: rgb(0, 0, 238);  
   --icon-filter_hover: invert(60%);
   --main-headline-color: rgb(0, 0, 192);
@@ -11,7 +11,7 @@
 }
 
 .alert {background-color: rgb(251, 251, 251)}
-.triangle{background-color: rgb(251, 251, 251)!important}
+.triangle{background-color: var(--bs-white)!important}
 .navbar{background-color: rgb(251, 251, 251)!important}
 
 /* Change the white to any color */

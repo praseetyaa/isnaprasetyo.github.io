@@ -16,10 +16,11 @@
 .triangle{background-color: #383838!important}
 .card {--background-color: rgba(251, 251, 251, .1)}
 .card .card-header, .card .card-footer{border-color: rgba(251, 251, 251, .1)}
-.navbar{background-color: rgb(33, 33, 33)!important}
-.navbar-light .navbar-nav .nav-link{color: rgba(251, 251, 251, .5); font-weight: normal!important;}
-.navbar-light .navbar-nav .nav-link:hover{color: rgba(251, 251, 251, .7);}
+.navbar, .modal-content{background-color: rgb(33, 33, 33)!important}
+.navbar-light .navbar-nav .nav-link, .close{color: rgba(251, 251, 251, .5); font-weight: normal!important; transition: .2s ease}
+.navbar-light .navbar-nav .nav-link:hover, .close:hover{color: rgba(251, 251, 251, .7);}
 .form-outline .form-control~.form-label{color: var(--color)}
+.modal-header{border-bottom: 2px solid rgba(251, 251, 251, .1)}
 /* Change the white to any color */
 /*input:-webkit-autofill,
 input:-webkit-autofill:hover, 

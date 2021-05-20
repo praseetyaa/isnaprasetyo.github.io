@@ -88,7 +88,7 @@
 	  </div>
 	  <button type="button" class="btn-close" data-mdb-dismiss="alert" aria-label="Close"></button>
 	</div>
-	<section id="intro" style="height: 100vh; padding-top: 10em; padding-bottom: 10em;">
+	<section id="intro" style="min-height: 100vh; padding-top: 10em; padding-bottom: 10em;">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-12 mb-4 mb-lg-0 text-lg-start text-center">
@@ -111,28 +111,76 @@
 			<a href="#projects"><div class="icon-scroll"></div></a>
 		</div>
 	</section>
-	<section id="projects" style="height: 100vh; padding-top: 10em; padding-bottom: 10em;">
+	<section id="projects" style="padding-top: 10em; padding-bottom: 10em;">
 		<div class="container">
 			<div class="text-center mb-4" style="background-image: url('assets/img/undraw_working_from_anywhere_ub67.svg'); background-repeat: no-repeat; background-size: 300px">
 				<h1 class="fw-bold color-1">Our Projects</h1>
 				<p>We made some awesome websites, interest? check the <a class="fw-bold text-reset color-1" href="#contact">Contact</a> page.</p>
 			</div>
-			<div class="carousel-wrap">
-				<div class="owl-carousel owl-theme" id="slider">
-					<div class="item my-4" v-for="item in items" :key="item.src">
+			<div class="project-wrap d-none d-md-block">
+				<div class="row" id="projects">
+					<div class="col-4 item col-lg-3 my-2" v-for="item in 8" :key="item.src">
 						<div class="card card-hover">
 							<div class="card-body">
-								<a :href="item.text" :target="item.text">
-								<img class="figure rounded img-fluid" :src="item.src">
+								<a :href="items[item].text" :target="items[item].text" data-toggle="tooltip" :title=" 'Open ' + items[item].text">
+									<img class="figure rounded img-fluid" :src="items[item].src">
+									<div class="middle">
+										<div class="text"><i class="fas fa-external-link-alt" style="font-size: 3rem"></i></div>
+									</div>
 								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="carousel-wrap d-block d-md-none">
+				<div class="owl-carousel owl-theme" id="slider">
+					<div class="item my-4" v-for="item in items" :key="item.src">
+						<div class="card card-hover">
+							<div class="card-body">
+								<a :href="item.text" :target="item.text" data-toggle="tooltip" :title=" 'Open ' + item.text">
+									<img class="figure rounded img-fluid" :src="item.src">
+									<div class="middle">
+										<div class="text"><i class="fas fa-external-link-alt" style="font-size: 3rem"></i></div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="text-center mt-3"><button class="btn btn-theme text-capitalize" data-mdb-toggle="modal" data-mdb-target="#seemore">See More</button></div>
+			<div class="modal fade" id="seemore" tabindex="-1" aria-labelledby="seemoreLabel" aria-hidden="true" style="padding-right: 0!important">
+			  <div class="modal-dialog modal-dialog-scrollable">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="seemoreLabel">Our Projects</h5>
+			        <button type="button" class="close" data-mdb-dismiss="modal" aria-label="Close">
+			          <i class="fas fa-times"></i>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+					<div class="row" id="projects">
+						<div class="col-6 col-md-3 item col-lg-2 my-2" v-for="item in items" :key="item.src">
+							<div class="card card-hover">
+								<div class="card-body">
+									<a :href="item.text" :target="item.text" data-toggle="tooltip" :title=" 'Open ' + item.text">
+										<img class="figure rounded img-fluid" :src="item.src">
+										<div class="middle">
+											<div class="text"><i class="fas fa-external-link-alt" style="font-size: 3rem"></i></div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
 		</div>
 	</section>
-	<section id="about" style="height: 100vh; padding-top: 10em; padding-bottom: 10em;">
+	<section id="about" style="min-height: 100vh; padding-top: 10em; padding-bottom: 10em;">
 		<div class="container text-lg-start text-center">
 			<div class="row">
 				<div class="col-lg-6 col-12 mb-5 mb-lg-0">
@@ -145,7 +193,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="contact" style="height: 100vh; padding-top: 10em; padding-bottom: 10em;">
+	<section id="contact" style="min-height: 100vh; padding-top: 10em; padding-bottom: 10em;">
 		<div class="container text-center">
 			<div class="row">
 				<div class="col-12 mb-5 mb-lg-0">
@@ -160,13 +208,14 @@
 		</div>
 	</section>
 	<!-- MDB -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.1.0/mdb.min.js"></script>
     <!-- JQuery -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <!-- Owl Carousel -->
     <script type="text/javascript" src="assets/dist/owl.carousel.min.js"></script>
     <!-- vue -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <!-- app -->
 	<script type="text/javascript" src="assets/js/app.js"></script>
   </body>
