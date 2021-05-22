@@ -1,0 +1,78 @@
+/* light.css: 👉 dark-on-light */
+/* light.css */
+:root {
+  --background-color: var(--light);
+  --color: var(--dark);
+  --bg-level-1: var(--white);
+  --bg-level-2: var(--white);
+  --bg-level-3: var(--white);
+  --bg-level-4: var(--white);
+  --bg-level-5: var(--white);
+}
+
+body{background-color: var(--background-color); color: var(--color)}
+.tile, .widget-small, .dropdown-menu, .tile-topik, .card, .app-title, .app-header.nav-sticky, .modal-content {background-color: var(--bg-level-1); color: var(--color);}
+.list-group-item-action, .dropdown-item{color: var(--color)}
+.list-group-item-action:hover, .list-group-item-action:focus{color: var(--primary-dark)}
+.page-item.disabled .page-link{background-color: var(--bg-level-2); border-color: var(--bg-level-5)}
+.border, .border-left, .border-top, .border-right, .border-bottom {border-color: var(--bg-level-5)!important}
+.treeview-item.active, .treeview-item:hover, .treeview-item:focus {background: rgba(0,0,0,0.1)}
+.ql-snow .ql-stroke{stroke: var(--color)!important}
+.ql-snow .ql-toolbar button, .ql-snow.ql-toolbar button{background: var(--bg-level-5)!important}
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options{background-color: var(--background-color)!important}
+.ql-editor.ql-blank::before{color: var(--color)!important}
+/*table*/
+.table-bordered{border: 1px solid var(--bg-level-5)}
+.table thead th{border-bottom: 2px solid var(--bg-level-5)}
+.table-bordered th, .table-bordered td{border: 1px solid var(--bg-level-5)}
+/*input*/
+.form-control, .form-control:focus, .form-control:disabled, .form-control[readonly], .bootstrap-tagsinput{background-color: var(--bg-level-5)!important; color: var(--color)!important}
+.ql-snow .ql-picker{color: var(--color)!important}
+.ql-toolbar.ql-snow .ql-picker-label{border-color: var(--color)!important}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 2px solid var(--bg-level-4);
+  -webkit-text-fill-color: var(--color);
+  -webkit-box-shadow: 0 0 0px 1000px var(--background-color) inset;
+  transition: background-color 5000s ease-in-out 0s;}
+/* do not group these rules */
+*::-webkit-input-placeholder {
+    color: var(--color)!important;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: var(--color)!important;
+    opacity: 1;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: var(--color)!important;
+    opacity: 1;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: var(--color)!important;
+}
+*::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--color)!important;
+}
+*::placeholder {
+    /* modern browser */
+    color: var(--color)!important;
+}
+
+/*start*/
+.app-sidebar{background-color: var(--background-color)}
+.treeview-menu{background-color: var(--bg-level-1)}
+.fab-wrapper .bg-white{background-color: var(--bg-level-2)!important}
+@media (min-width: 768px){
+    .sidebar-mini.sidenav-closed .treeview-menu {background: var(--bg-level-1);}
+}
