@@ -15,6 +15,10 @@
  */
 
 // @license © 2019 Google LLC. Licensed under the Apache License, Version 2.0.
+
+// Repack by isnaprasetyo
+// Contact me if want to change praseetyaa@gmail.com
+
 const doc = document;
 const store = localStorage;
 const PREFERS_COLOR_SCHEME = 'prefers-color-scheme';
