@@ -1,6 +1,9 @@
 /* dark.css: 👉 light-on-dark */
 /* dark.css */
 :root {
+    @if (Auth::user()->role==role('it'))
+    color-scheme: dark;
+    @endif
   --background-color: var(--dark);
   --color: var(--light);
   --bg-level-1: #414950;
