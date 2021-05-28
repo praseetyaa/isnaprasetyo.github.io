@@ -1,0 +1,52 @@
+:root {
+	--background-color: #0d1117;
+	--color: #adbac7;
+	--bg-level-1: #161b22;
+	--bg-level-2: #4E575F;
+	--bg-level-3: #5B656F;
+	--bg-level-4: #67737E;
+	--bg-level-5: #74818D;
+    --border: #30363d;
+}
+
+/*input*/
+.form-control, .form-control:focus, .form-control:disabled, .form-control[readonly], .bootstrap-tagsinput{background-color: var(--background-color)!important; color: var(--color)!important}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 2px solid var(--bg-level-4);
+  -webkit-text-fill-color: var(--color);
+  -webkit-box-shadow: 0 0 0px 1000px var(--background-color) inset;
+  transition: background-color 5000s ease-in-out 0s;}
+/* do not group these rules */
+*::-webkit-input-placeholder {
+    color: var(--color)!important;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: var(--color)!important;
+    opacity: 1;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: var(--color)!important;
+    opacity: 1;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: var(--color)!important;
+}
+*::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--color)!important;
+}
+*::placeholder {
+    /* modern browser */
+    color: var(--color)!important;
+}

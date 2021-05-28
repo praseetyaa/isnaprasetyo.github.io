@@ -1,0 +1,22 @@
+:root{
+	--transition: .25s;
+	--timing: ease-in-out;
+	--shadow-sm: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+
+body{background-color: var(--background-color); color: var(--color); transition: var(--transition) var(--timing)}
+.card, 
+.navbar,
+.dropdown-menu{background-color: var(--bg-level-1); color: var(--color); transition: var(--transition) var(--timing); border: unset; box-shadow: var(--shadow-sm)}
+.dropdown-menu,
+.form-control{background-color: var(--bg-level-1); color: var(--color); transition: var(--transition) var(--timing); border: 1px solid var(--border); box-shadow: var(--shadow-sm)}
+.navbar .navbar-brand,
+.navbar .nav-link.active,
+.navbar .show>.nav-link,
+.navbar .nav-link,
+.dropdown-item{color: var(--color)}
+.form-control,
+.form-control:focus,
+.form-control:disabled,
+.form-control[readonly],
+.bootstrap-tagsinput{background-color: var(--background-color)!important; color: var(--color)!important; transition: var(--transition) var(--timing)}
