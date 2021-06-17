@@ -26,6 +26,8 @@ while ($row=mysqli_fetch_array($result,MYSQLI_ASSOC))
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="assets/cek/<?php echo($theme) ?>.css" id="theme-link">
     <link rel="stylesheet" href="assets/cek/style.css">
 
@@ -148,19 +150,10 @@ while ($row=mysqli_fetch_array($result,MYSQLI_ASSOC))
         </div>
     </section>
     <section class="container">
-        <form id="addUser" class="form-inline" method="POST" action="">
-            <div class="form-group mb-2">
-                <label for="name" class="sr-only">Name</label>
-                <input id="name" type="text" class="form-control" name="name" placeholder="Name"
-                       required autofocus>
-            </div>
-            <div class="form-group mb-2">
-                <label for="email" class="sr-only">Email</label>
-                <input id="email" type="email" class="form-control" name="email" placeholder="Email"
-                       required autofocus>
-            </div>
-            <button id="submitUser" type="button" class="btn btn-primary mb-2">Submit</button>
-        </form>
+    <div class="form-group col-md-12">
+        <label>Tanggal Lahir <span class="text-danger">*</span></label>
+        <input type="text" name="tanggal_lahir" class="form-control form-control-sm" placeholder="Masukkan Tanggal Lahir (Format: dd/mm/yyyy)" autocomplete="off">
+    </div>  
     </section>
                 
     <!-- <script src="assets/cek/javascript.js"></script> -->
@@ -265,5 +258,16 @@ while ($row=mysqli_fetch_array($result,MYSQLI_ASSOC))
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function(){
+            $("input[name=tanggal_lahir]").datepicker({
+                format: 'dd/mm/yyyy',
+                todayHighlight: true,
+                autoclose: true,
+            });
+        })
+    </script>
   </body>
 </html>

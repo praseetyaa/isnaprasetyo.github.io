@@ -1,17 +1,17 @@
 /* dark.css: 👉 light-on-dark */
 /* dark.css */
 :root {
-  --background-color: var(--dark);
-  --color: var(--light);
-  --bg-level-1: #414950;
-  --bg-level-2: #4E575F;
-  --bg-level-3: #5B656F;
-  --bg-level-4: #67737E;
-  --bg-level-5: #74818D;
+  --background-color: #010409;
+  --color: #f0f6fc;
+  --bg-level-1: #161b22;
+  --bg-level-2: #21262d;
+  --bg-level-3: #30363d;
+  --bg-level-4: #484f58;
+  --bg-level-5: #30363d;
 }
 
-body{background-color: var(--background-color); color: var(--color)}
-.tile, .widget-small, .dropdown-menu, .tile-topik, .card, .app-title, .app-header.nav-sticky, .modal-content {background-color: var(--bg-level-1); color: var(--color);}
+body{background-color: var(--background-color); color: var(--color);}
+.tile, .widget-small, .dropdown-menu, .tile-topik, .card, .app-title, .app-sidebar, .app-header.nav-sticky, .modal-content {background-color: var(--bg-level-1); color: var(--color);}
 .list-group-item-action, .dropdown-item{color: var(--color)}
 .list-group-item-action:hover, .list-group-item-action:focus{color: var(--primary-dark)}
 .page-item.disabled .page-link{background-color: var(--bg-level-2); border-color: var(--bg-level-5)}
@@ -21,6 +21,9 @@ body{background-color: var(--background-color); color: var(--color)}
 .ql-snow .ql-toolbar button, .ql-snow.ql-toolbar button{background: var(--bg-level-5)!important}
 .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-options{background-color: var(--background-color)!important}
 .ql-editor.ql-blank::before{color: var(--color)!important}
+/*Transition*/
+body,
+.tile, .widget-small, .dropdown-menu, .tile-topik, .card, .app-title, .app-sidebar, .app-header.nav-sticky, .modal-content{transition: .25s ease;}
 /*table*/
 .table-bordered{border: 1px solid var(--bg-level-5)}
 .table thead th{border-bottom: 2px solid var(--bg-level-5)}
@@ -70,8 +73,7 @@ select:-webkit-autofill:focus {
 }
 
 /*start*/
-.app-sidebar{background-color: var(--background-color)}
-.treeview-menu{background-color: var(--bg-level-1)}
+.treeview-menu{background-color: var(--bg-level-2)}
 .fab-wrapper .bg-white{background-color: var(--bg-level-2)!important}
 @media (min-width: 768px){
     .sidebar-mini.sidenav-closed .treeview-menu {background: var(--bg-level-1);}

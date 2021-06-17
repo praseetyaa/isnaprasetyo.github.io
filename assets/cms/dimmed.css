@@ -1,17 +1,17 @@
-/* light.css: 👉 dark-on-light */
-/* light.css */
+/* dark.css: 👉 light-on-dark */
+/* dark.css */
 :root {
-  --background-color: var(--light);
-  --color: var(--dark);
-  --bg-level-1: var(--white);
-  --bg-level-2: var(--white);
-  --bg-level-3: var(--white);
-  --bg-level-4: var(--white);
-  --bg-level-5: var(--white);
+  --background-color: #1c2128;
+  --color: #cdd9e5;
+  --bg-level-1: #22272e;
+  --bg-level-2: #2d333b;
+  --bg-level-3: #373e47;
+  --bg-level-4: #444c56;
+  --bg-level-5: #545d68;
 }
 
-body{background-color: var(--background-color); color: var(--color)}
-.tile, .widget-small, .dropdown-menu, .tile-topik, .card, .app-title, .app-header.nav-sticky, .modal-content {background-color: var(--bg-level-1); color: var(--color);}
+body{background-color: var(--background-color); color: var(--color);}
+.tile, .widget-small, .dropdown-menu, .tile-topik, .card, .app-title, .app-sidebar, .app-header.nav-sticky, .modal-content {background-color: var(--bg-level-1); color: var(--color);}
 .list-group-item-action, .dropdown-item{color: var(--color)}
 .list-group-item-action:hover, .list-group-item-action:focus{color: var(--primary-dark)}
 .page-item.disabled .page-link{background-color: var(--bg-level-2); border-color: var(--bg-level-5)}
@@ -23,7 +23,7 @@ body{background-color: var(--background-color); color: var(--color)}
 .ql-editor.ql-blank::before{color: var(--color)!important}
 /*Transition*/
 body,
-.tile, .widget-small, .dropdown-menu, .tile-topik, .card, .app-title, .app-header.nav-sticky, .modal-content{transition: .25s ease;}
+.tile, .widget-small, .dropdown-menu, .tile-topik, .card, .app-title, .app-sidebar, .app-header.nav-sticky, .modal-content{transition: .25s ease;}
 /*table*/
 .table-bordered{border: 1px solid var(--bg-level-5)}
 .table thead th{border-bottom: 2px solid var(--bg-level-5)}
@@ -73,8 +73,7 @@ select:-webkit-autofill:focus {
 }
 
 /*start*/
-.app-sidebar{background-color: var(--background-color)}
-.treeview-menu{background-color: var(--bg-level-1)}
+.treeview-menu{background-color: var(--bg-level-2)}
 .fab-wrapper .bg-white{background-color: var(--bg-level-2)!important}
 @media (min-width: 768px){
     .sidebar-mini.sidenav-closed .treeview-menu {background: var(--bg-level-1);}
