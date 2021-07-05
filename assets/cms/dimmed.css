@@ -23,7 +23,7 @@ body{background-color: var(--background-color); color: var(--color);}
 .ql-editor.ql-blank::before{color: var(--color)!important}
 /*Transition*/
 body,
-.tile, .widget-small, .dropdown-menu, .tile-topik, .card, .app-title, .app-sidebar, .app-header.nav-sticky, .modal-content{transition: .25s ease;}
+.tile, .widget-small, .dropdown-menu, .tile-topik, .card, .app-title, .app-sidebar, .modal-content{transition: .25s ease;}
 /*table*/
 .table-bordered{border: 1px solid var(--bg-level-5)}
 .table thead th{border-bottom: 2px solid var(--bg-level-5)}
@@ -75,6 +75,7 @@ select:-webkit-autofill:focus {
 /*start*/
 .treeview-menu{background-color: var(--bg-level-2)}
 .fab-wrapper .bg-white{background-color: var(--bg-level-2)!important}
+.experience [data-exp='free']{background-color: rgba(255,255,255,.8);}
 @media (min-width: 768px){
     .sidebar-mini.sidenav-closed .treeview-menu {background: var(--bg-level-1);}
 }
