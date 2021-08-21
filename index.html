@@ -209,7 +209,10 @@
 		</div>
 	</section>
 
-<div id="vueaxios">{{ info }}</div>
+<div id="vueaxios" class="mb-5">
+	<img :src="info.data[0].images.normal" alt="images" class="img-fluid mb-3 rounded">
+	<p v-html="info.data[0].description"></p>
+</div>
 
 <ul id="dribbbleShots"></ul>
 

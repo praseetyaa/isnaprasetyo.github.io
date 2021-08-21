@@ -145,7 +145,7 @@ var example3 = new Vue({
   },
   mounted() {
     axios
-      .get('https://api.coindesk.com/v1/bpi/currentprice.json')
+      .get('https://api.dribbble.com/v2/user/shots?access_token=6136314f1c76016d30e01d5381a993c80a8760504e999cedb766f85d19763fc8')
       .then(response => (this.info = response))
   }
 })
