@@ -96,7 +96,11 @@ var example1 = new Vue({
       { text: 'https://campusnet.id', 
         src: 'assets/img/8.webp'},
       { text: 'https://demo.campusnet.id', 
-        src: 'assets/img/9.webp'}
+        src: 'assets/img/9.webp'},
+      { text: 'https://campusdigital.id', 
+        src: 'assets/img/10.png'},
+      { text: '#', 
+        src: 'assets/img/11.png'}
     ]
   }
 })
@@ -122,8 +126,27 @@ var example2 = new Vue({
       { text: 'https://campusnet.id', 
         src: 'assets/img/8.webp'},
       { text: 'https://demo.campusnet.id', 
-        src: 'assets/img/9.webp'}
-    ]
+        src: 'assets/img/9.webp'},
+      { text: 'https://campusdigital.id', 
+        src: 'assets/img/10.png'},
+      { text: '#', 
+        src: 'assets/img/11.png'}
+    ],
+    count: 3,
+  }
+})
+
+var example3 = new Vue({
+  el: '#vueaxios',
+  data() {
+    return{
+      info: null
+    }
+  },
+  mounted() {
+    axios
+      .get('https://api.coindesk.com/v1/bpi/currentprice.json')
+      .then(response => (this.info = response))
   }
 })
 
