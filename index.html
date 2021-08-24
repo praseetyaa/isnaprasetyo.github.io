@@ -161,20 +161,20 @@
 			        </button>
 			      </div>
 			      <div class="modal-body">
-					<div class="row" id="projects">
-						<div class="col-6 col-md-3 item col-lg-2 my-2" v-for="item in items" :key="item.src">
-							<div class="card card-hover">
-								<div class="card-body">
-									<a :href="item.text" :target="item.text" data-toggle="tooltip" :title=" 'Open ' + item.text">
-										<img class="figure rounded img-fluid" :src="item.src">
-										<div class="middle">
-											<div class="text"><i class="fas fa-external-link-alt" style="font-size: 3rem"></i></div>
+							<div class="row" id="projects">
+								<div class="col-6 col-md-3 item col-lg-2 my-2" v-for="item in items" :key="item.src">
+									<div class="card card-hover">
+										<div class="card-body p-0 p-md-2 p-lg-3">
+											<a :href="item.text" :target="item.text" data-toggle="tooltip" :title=" 'Open ' + item.text">
+												<img class="figure rounded img-fluid" :src="item.src">
+												<div class="middle">
+													<div class="text"><i class="fas fa-external-link-alt" style="font-size: 3rem"></i></div>
+												</div>
+											</a>
 										</div>
-									</a>
+									</div>
 								</div>
 							</div>
-						</div>
-					</div>
 			      </div>
 			    </div>
 			  </div>
