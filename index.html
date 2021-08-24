@@ -136,7 +136,7 @@
 			</div>
 			<div class="carousel-wrap d-block d-md-none">
 				<div class="owl-carousel owl-theme" id="slider">
-					<div class="item my-4" v-for="item in items.slice" :key="item.src">
+					<div class="item my-4" v-for="item in items" :key="item.src">
 						<div class="card card-hover">
 							<div class="card-body">
 								<a :href="item.text" :target="item.text" data-toggle="tooltip" :title=" 'Open ' + item.text">
@@ -209,12 +209,10 @@
 		</div>
 	</section>
 
-<div id="vueaxios" class="mb-5">
+<!-- <div id="vueaxios" class="mb-5">
 	<img :src="info.data[0].images.normal" alt="images" class="img-fluid mb-3 rounded">
 	<p v-html="info.data[0].description"></p>
-</div>
-
-<ul id="dribbbleShots"></ul>
+</div> -->
 
 	<!-- MDB -->
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -229,44 +227,7 @@
     <!-- vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <!-- app -->
-	<script type="text/javascript" src="assets/js/app.js"></script>
+		<script type="text/javascript" src="assets/js/app.js"></script>
 
-	<script>
-// Set the Access Token
-var accessToken = "6136314f1c76016d30e01d5381a993c80a8760504e999cedb766f85d19763fc8"
-
-// Call Dribble v2 API
-$.ajax({
-    url: 'https://api.dribbble.com/v2/user/shots?access_token='+accessToken,
-    dataType: 'json',
-    type: 'GET',
-    success: function(data) {  
-      if (data.length > 0) { 
-        $.each(data.reverse(), function(i, val) {                
-          $('#dribbbleShots').prepend(
-            '<li class="shot" target="_blank" href="'+ val.html_url +'" title="' + val.title + '"><div class="title">' + val.title + '</div><img src="'+ val.images.hidpi +'"/></li>'
-            )
-        })
-      }
-      else {
-        $('#dribbbleShots').append('<p>Sorry, No shots yet</p>');
-      }
-    }
-});
-	</script>
   </body>
 </html>
-
-
-
-<!-- id
-0952f2a32320c67700537e321a2e17f382de9f40367b282c3be773ddf8a29d90
-
-secret
-863cd6bda1ef05d2499b0a3710a08d621c0c4cb3c2a15bd7c70ca82e762365e3
-
-code
-f19602715c6a323e829d934eb53fa6b0257da2ed1fe693e51997f510525f2440
-
-access token
-6136314f1c76016d30e01d5381a993c80a8760504e999cedb766f85d19763fc8 -->
