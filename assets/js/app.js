@@ -96,7 +96,11 @@ var example1 = new Vue({
       { text: 'https://campusnet.id', 
         src: 'assets/img/8.webp'},
       { text: 'https://demo.campusnet.id', 
-        src: 'assets/img/9.webp'}
+        src: 'assets/img/9.webp'},
+      { text: 'https://campusdigital.id', 
+        src: 'assets/img/10.png'},
+      { text: '#', 
+        src: 'assets/img/11.png'}
     ]
   }
 })
@@ -122,8 +126,27 @@ var example2 = new Vue({
       { text: 'https://campusnet.id', 
         src: 'assets/img/8.webp'},
       { text: 'https://demo.campusnet.id', 
-        src: 'assets/img/9.webp'}
-    ]
+        src: 'assets/img/9.webp'},
+      { text: 'https://campusdigital.id', 
+        src: 'assets/img/10.png'},
+      { text: '#', 
+        src: 'assets/img/11.png'}
+    ],
+    count: 3,
+  }
+})
+
+var example3 = new Vue({
+  el: '#vueaxios',
+  data() {
+    return{
+      info: null
+    }
+  },
+  mounted() {
+    axios
+      .get('https://api.dribbble.com/v2/user/shots?access_token=6136314f1c76016d30e01d5381a993c80a8760504e999cedb766f85d19763fc8')
+      .then(response => (this.info = response))
   }
 })
 
