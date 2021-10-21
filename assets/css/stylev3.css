@@ -72,6 +72,8 @@ body{-webkit-font-smoothing: antialiased; font-family: 'Nunito Sans', sans-serif
 .section-fitur{padding-top: 6rem; padding-bottom: 6rem;}
 .section-tutorial .nav-link{color: var(--secondary);}
 .section-tutorial .nav-link.active{background-color: var(--secondary);}
+footer{background-color: #142b72; background-image: url(../img/bg/footer-bg.svg); background-repeat: no-repeat; background-position: bottom; background-size: cover; border-radius: 24px 24px 0 0; color: #fff; position: relative; z-index: 2;}
+
 
 @keyframes fade{
     from{opacity: 0;}
