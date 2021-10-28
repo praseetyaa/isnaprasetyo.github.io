@@ -5,67 +5,67 @@
 				"idClient": "1",
 				"category": "2",
 				"name": "Akuntansi Online",
-				"url": "http://akuntansionline.net/",
-				"src": "praseetyaa.github.io/portfolio/assets/img/client/webp/1.webp"
+				"url": "https://akuntansionline.net/",
+				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/1.webp"
 			},
 			{
 				"idClient": "2",
 				"category": "1",
 				"name": "Campusnet",
-				"url": "http://campusnet.id/",
-				"src": "praseetyaa.github.io/portfolio/assets/img/client/webp/2.webp"
+				"url": "https://campusnet.id/",
+				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/2.webp"
 			},
 			{
 				"idClient": "3",
 				"category": "5",
 				"name": "Demo Campusnet",
-				"url": "http://demo.campusnet.id/",
-				"src": "praseetyaa.github.io/portfolio/assets/img/client/webp/3.webp"
+				"url": "https://demo.campusnet.id/",
+				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/3.webp"
 			},
 			{
 				"idClient": "4",
 				"category": "2",
 				"name": "Bisa Indonesia",
-				"url": "http://bisa.co.id/",
-				"src": "praseetyaa.github.io/portfolio/assets/img/client/webp/4.webp"
+				"url": "https://bisa.co.id/",
+				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/4.webp"
 			},
 			{
 				"idClient": "5",
 				"category": "2",
 				"name": "Campus Digital",
-				"url": "http://campusdigital.id/",
-				"src": "praseetyaa.github.io/portfolio/assets/img/client/webp/5.webp"
+				"url": "https://campusdigital.id/",
+				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/5.webp"
 			},
 			{
 				"idClient": "6",
 				"category": "2",
 				"name": "Kompetensiku",
-				"url": "http://kompetensiku.id/",
-				"src": "praseetyaa.github.io/portfolio/assets/img/client/webp/6.webp"
+				"url": "https://kompetensiku.id/",
+				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/6.webp"
 			},
 			{
 				"idClient": "7",
 				"category": "2",
 				"name": "Campus",
-				"url": "http://campus.co.id.net/",
-				"src": "praseetyaa.github.io/portfolio/assets/img/client/webp/7.webp"
+				"url": "https://campus.co.id.net/",
+				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/7.webp"
 			},
 			{
 				"idClient": "8",
 				"category": "7",
 				"name": "Wonolopo Shop",
-				"url": "http://wonoloposhop.com/",
-				"src": "praseetyaa.github.io/portfolio/assets/img/client/webp/8.webp"
+				"url": "https://wonoloposhop.com/",
+				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/8.webp"
 			},
 			{
 				"idClient": "9",
 				"category": "7",
 				"name": "Teachin Factory SMK N 1 Polewali",
-				"url": "http://tefasmkn1polewali.com/",
-				"src": "praseetyaa.github.io/portfolio/assets/img/client/webp/9.webp"
+				"url": "https://tefasmkn1polewali.com/",
+				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/9.webp"
 			}
 		],
-		
+
 		"categoryList": [
 			{
 				"idCategory": "1",
