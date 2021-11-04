@@ -7,7 +7,7 @@ new Vue({
     },
     mounted () {
       axios
-        .get('https://praseetyaa.github.io/portfolio/assets/js/product.json')
+        .get('assets/js/product.json')
         .then(response => (this.items = response))
     },
 
