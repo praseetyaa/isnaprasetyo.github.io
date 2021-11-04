@@ -4,6 +4,7 @@
 			{
 				"idClient": "1",
 				"category": "2",
+				"code" : "CL01",
 				"name": "Akuntansi Online",
 				"url": "https://akuntansionline.net/",
 				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/1.webp"
@@ -11,6 +12,7 @@
 			{
 				"idClient": "2",
 				"category": "1",
+				"code" : "CL01",
 				"name": "Campusnet",
 				"url": "https://campusnet.id/",
 				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/2.webp"
@@ -18,6 +20,7 @@
 			{
 				"idClient": "3",
 				"category": "5",
+				"code" : "CL01",
 				"name": "Demo Campusnet",
 				"url": "https://demo.campusnet.id/",
 				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/3.webp"
@@ -25,6 +28,7 @@
 			{
 				"idClient": "4",
 				"category": "2",
+				"code" : "CL01",
 				"name": "Bisa Indonesia",
 				"url": "https://bisa.co.id/",
 				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/4.webp"
@@ -32,6 +36,7 @@
 			{
 				"idClient": "5",
 				"category": "2",
+				"code" : "CL01",
 				"name": "Campus Digital",
 				"url": "https://campusdigital.id/",
 				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/5.webp"
@@ -39,6 +44,7 @@
 			{
 				"idClient": "6",
 				"category": "2",
+				"code" : "CL01",
 				"name": "Kompetensiku",
 				"url": "https://kompetensiku.id/",
 				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/6.webp"
@@ -46,6 +52,7 @@
 			{
 				"idClient": "7",
 				"category": "2",
+				"code" : "CL01",
 				"name": "Campus",
 				"url": "https://campus.co.id.net/",
 				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/7.webp"
@@ -53,6 +60,7 @@
 			{
 				"idClient": "8",
 				"category": "7",
+				"code" : "CL01",
 				"name": "Wonolopo Shop",
 				"url": "https://wonoloposhop.com/",
 				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/8.webp"
@@ -60,7 +68,8 @@
 			{
 				"idClient": "9",
 				"category": "7",
-				"name": "Teachin Factory SMK N 1 Polewali",
+				"code" : "CL01",
+				"name": "Teaching Factory SMK N 1 Polewali",
 				"url": "https://tefasmkn1polewali.com/",
 				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/9.webp"
 			}
@@ -94,6 +103,17 @@
 			{
 				"idCategory": "7",
 				"categoryName": "Ecommerce"
+			}
+		],
+
+		"roleList": [
+			{
+				"idRole": "1",
+				"codeName" : "SP01"
+			},
+			{
+				"idRole": "2",
+				"codeName" : "CL01"
 			}
 		]
 	}

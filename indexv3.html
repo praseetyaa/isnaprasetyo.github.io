@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
@@ -127,63 +127,27 @@
         </ul>
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="card border-0 shadow rounded-2">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" style="background: url('assets/img/2.webp'); background-repeat: no-repeat; height: 200px; width: 100%; background-size:cover; border-radius: 1rem 1rem 0 0;">
+            <div class="row" id="ourProduct" v-cloak>
+              <div
+              class="col-lg-3 mb-4"
+              v-if="items.data[0].client.length > 0" v-for="item in homeSort(items.data[0].client)">
+                <div class="card border-0 shadow-sm rounded-2">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="product" :style="{backgroundImage:`url(${item.src})`}" style="background-repeat: no-repeat; height: 200px; width: 100%; background-size:cover; border-radius: 1rem 1rem 0 0;">
                   <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <div>
-                        <p class="mb-0 fw-bold">Belanja Online</p>
-                        <p class="mb-0 text-muted">Toko</p>
+                    <div class="row">
+                      <div class="col text-start">
+                        <p class="mb-0 fw-bold text-truncate">{{item.name}}</p>
+                        <p class="mb-0 text-muted" v-for="itemss in items.data[0].categoryList" v-if="itemss.idCategory == item.category">{{itemss.categoryName}}</p>
+                        <h4 class="mb-0 fw-bold text-primary">Rp200.000</h4>
                       </div>
-                      <p class="fw-bold text-primary">Rp 200.000</p>
                     </div>
                     <hr>
-                    <p>Website Olzhop sangat cocok untuk Anda yang ingin memiliki toko online yang terintegrasi dengan jasa pengiriman, pembayaran serta WhatsApp dan banyak fitur lagi.</p>
-                    <div class="d-flex justify-content-between">
-                      <button class="btn btn-primary-s fw-bold rounded-3 px-3">Lihat Langsung</button>
-                      <button class="btn btn-primary fw-bold rounded-3 px-3">Pesan Sekarang</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card border-0 shadow rounded-2">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" style="background: url('assets/img/3.webp'); background-repeat: no-repeat; height: 200px; width: 100%; background-size:cover; border-radius: 1rem 1rem 0 0;">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <div>
-                        <p class="mb-0 fw-bold">Belanja Online</p>
-                        <p class="mb-0 text-muted">Toko</p>
-                      </div>
-                      <p class="fw-bold text-primary">Rp 200.000</p>
-                    </div>
-                    <hr>
-                    <p>Website Olzhop sangat cocok untuk Anda yang ingin memiliki toko online yang terintegrasi dengan jasa pengiriman, pembayaran serta WhatsApp dan banyak fitur lagi.</p>
-                    <div class="d-flex justify-content-between">
-                      <button class="btn btn-primary-s fw-bold rounded-3 px-3">Lihat Langsung</button>
-                      <button class="btn btn-primary fw-bold rounded-3 px-3">Pesan Sekarang</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card border-0 shadow rounded-2">
-                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" style="background: url('assets/img/1.webp'); background-repeat: no-repeat; height: 200px; width: 100%; background-size:cover; border-radius: 1rem 1rem 0 0;">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <div>
-                        <p class="mb-0 fw-bold">Belanja Online</p>
-                        <p class="mb-0 text-muted">Toko</p>
-                      </div>
-                      <p class="fw-bold text-primary">Rp 200.000</p>
-                    </div>
-                    <hr>
-                    <p>Website Olzhop sangat cocok untuk Anda yang ingin memiliki toko online yang terintegrasi dengan jasa pengiriman, pembayaran serta WhatsApp dan banyak fitur lagi.</p>
-                    <div class="d-flex justify-content-between">
-                      <button class="btn btn-primary-s fw-bold rounded-3 px-3">Lihat Langsung</button>
-                      <button class="btn btn-primary fw-bold rounded-3 px-3">Pesan Sekarang</button>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="text-center">
+                      <a class="btn btn-primary-s fw-bold rounded-3 px-4 mb-3" :href="item.url" target="_blank">Lihat Langsung</a>
+                      <a class="btn btn-primary fw-bold rounded-3 px-4"
+                      v-for="itemss in items.data[0].categoryList" v-if="itemss.idCategory == item.category"
+                      :href="'https://wa.me/+62895359771137?text=Saya%20ingin%20memesan%20website%20'+itemss.categoryName">Pesan Sekarang</a>
                     </div>
                   </div>
                 </div>
@@ -402,18 +366,20 @@
     </section>
     
     <section class="bg-primary-gradient">
-        <footer>
-          <div class="container py-5">
-            <div class="d-flex justify-content-between">
-              <p class="mb-0 text-white small">Copyright ©2021 /. Spandiv | Bikin website murah hanya di Spandiv</p>
-              <a href="#" class="mb-0 text-white small">Kebijakan Privasi</a>
-            </div>
+      <footer>
+        <div class="container py-5">
+          <div class="d-flex justify-content-between">
+            <p class="mb-0 text-white small">Copyright ©2021 /. Spandiv | Bikin website murah hanya di Spandiv</p>
+            <a href="#" class="mb-0 text-white small">Kebijakan Privasi</a>
           </div>
-        </footer>    
+        </div>
+      </footer>    
     </section>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="assets/js/appv3.js"></script>
 </body>
 
