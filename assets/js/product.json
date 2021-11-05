@@ -7,7 +7,8 @@
 				"code" : "CL01",
 				"name": "Akuntansi Online",
 				"url": "https://akuntansionline.net/",
-				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/1.webp"
+				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/1.webp",
+				"description": "Lorem ipsum dolor sit amet."
 			},
 			{
 				"idClient": "2",
@@ -15,7 +16,8 @@
 				"code" : "CL01",
 				"name": "Campusnet",
 				"url": "https://campusnet.id/",
-				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/2.webp"
+				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/2.webp",
+				"description": "Lorem ipsum dolor sit amet."
 			},
 			{
 				"idClient": "3",
@@ -23,7 +25,8 @@
 				"code" : "CL01",
 				"name": "Campusnet LMS",
 				"url": "https://demo.campusnet.id/",
-				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/3.webp"
+				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/3.webp",
+				"description": "Lorem ipsum dolor sit amet."
 			},
 			{
 				"idClient": "4",
@@ -31,7 +34,8 @@
 				"code" : "CL01",
 				"name": "Bisa Indonesia",
 				"url": "https://bisa.co.id/",
-				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/4.webp"
+				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/4.webp",
+				"description": "Lorem ipsum dolor sit amet."
 			},
 			{
 				"idClient": "5",
@@ -39,7 +43,8 @@
 				"code" : "CL01",
 				"name": "Campus Digital",
 				"url": "https://campusdigital.id/",
-				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/5.webp"
+				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/5.webp",
+				"description": "Lorem ipsum dolor sit amet."
 			},
 			{
 				"idClient": "6",
@@ -47,15 +52,17 @@
 				"code" : "CL01",
 				"name": "Kompetensiku",
 				"url": "https://kompetensiku.id/",
-				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/6.webp"
+				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/6.webp",
+				"description": "Lorem ipsum dolor sit amet."
 			},
 			{
 				"idClient": "7",
 				"category": "2",
 				"code" : "CL01",
 				"name": "Campus",
-				"url": "https://campus.co.id.net/",
-				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/7.webp"
+				"url": "https://campus.co.id/",
+				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/7.webp",
+				"description": "Lorem ipsum dolor sit amet."
 			},
 			{
 				"idClient": "8",
@@ -63,7 +70,8 @@
 				"code" : "CL01",
 				"name": "Wonolopo Shop",
 				"url": "https://wonoloposhop.com/",
-				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/8.webp"
+				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/8.webp",
+				"description": "Lorem ipsum dolor sit amet."
 			},
 			{
 				"idClient": "9",
@@ -71,37 +79,45 @@
 				"code" : "CL01",
 				"name": "Teaching Factory SMK N 1 Polewali",
 				"url": "https://tefasmkn1polewali.com/",
-				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/9.webp"
+				"src": "https://praseetyaa.github.io/portfolio/assets/img/client/webp/9.webp",
+				"description": "Lorem ipsum dolor sit amet."
 			}
 		],
 
 		"categoryList": [
 			{
 				"idCategory": "1",
+				"categoryPrice" : "500.000",
 				"categoryName": "Landing Page"
 			},
 			{
 				"idCategory": "2",
+				"categoryPrice" : "1.000.000",
 				"categoryName": "Company Profile"
 			},
 			{
 				"idCategory": "3",
+				"categoryPrice" : "1.750.000",
 				"categoryName": "Website Sekolah"
 			},
 			{
 				"idCategory": "4",
+				"categoryPrice" : "2.000.000",
 				"categoryName": "Website Rumah Sakit"
 			},
 			{
 				"idCategory": "5",
+				"categoryPrice" : "2.000.000",
 				"categoryName": "LMS"
 			},
 			{
 				"idCategory": "6",
+				"categoryPrice" : "3.000.000",
 				"categoryName": "CMS"
 			},
 			{
 				"idCategory": "7",
+				"categoryPrice" : "1.000.000",
 				"categoryName": "Ecommerce"
 			}
 		],

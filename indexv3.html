@@ -35,7 +35,7 @@
               <a class="nav-link active" aria-current="page" href="#">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Produk</a>
+              <a class="nav-link" href="#section-product">Produk</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Tentang</a>
@@ -70,7 +70,7 @@
               </ul>
             </li>
           </ul>
-          <button class="btn btn-primary rounded-3 px-3 fw-bold" type="button">Pesan Sekarang</button>
+          <a class="btn btn-primary rounded-3 px-3 fw-bold" href="https://wa.me/+62895359771137?text=Saya%20ingin%20memesan%20website%20" target="_blank">Pesan Sekarang</a>
         </div>
       </div>
     </nav>
@@ -82,7 +82,7 @@
             <div class="col-lg-6">
               <h1 class="fw-bold">Praktis Buat Website Bisnis dengan Fitur Lengkap</h1>
               <p>Temukan lebih banyak kebebasan untuk membuat, mendesain, mengelola, dan mengembangkan website persis seperti yang Anda inginkan. Langsung siap pakai!</p>
-              <button class="btn btn-secondary rounded-3 px-4 py-2 fw-bold shadow">Lihat Penawaran</button>
+              <a class="btn btn-secondary rounded-3 px-4 py-2 fw-bold shadow" href="#section-product">Lihat Penawaran</a>
             </div>
             <div class="col-lg-6"></div>
           </div>
@@ -108,14 +108,14 @@
           <div class="col-lg-6">
             <h1 class="fw-bold">Bebas dan Fleksibel Buat Website di Spandiv!</h1>
             <p>Bangun website berkualitas tinggi untuk segala kebutuhan online Anda. Baik untuk mempromosikan bisnis, memamerkan karya, membuka toko, atau memulai blog. Mulai kesuksesan online Anda melalui layanan Buat Website dari Spandiv dengan berbagai pilihan tema siap pakai.</p>
-            <button class="btn btn-secondary rounded-3 px-4 py-2 fw-bold shadow">Mulai Sekarang</button>
+            <a class="btn btn-secondary rounded-3 px-4 py-2 fw-bold shadow" href="#section-product">Mulai Sekarang</a>
           </div>
         </div>
       </div>
     </section>
     
-    <section class="section-product">
-      <div class="container">
+    <section class="section-product" id="section-product">
+      <div class="container" id="ourProduct" v-cloak>
         <h1 class="fw-bold text-center">Pilihan Paket Buat Website</h1>
         <ul class="nav nav-pills justify-content-center bg-primary-s w-fit my-5 p-3 mx-auto rounded-4" id="pills-tab" role="tablist">
           <li class="nav-item" role="presentation">
@@ -127,22 +127,24 @@
         </ul>
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-            <div class="row" id="ourProduct" v-cloak>
+            <div class="row">
               <div
-              class="col-lg-3 mb-4"
-              v-if="items.data[0].client.length > 0" v-for="item in homeSort(items.data[0].client)">
+              class="col-xxl-3 col-lg-4 col-md-6 mb-4"
+              v-for="item in homeSort(items.data[0].client)" v-if="item.category != '5' && '6' ">
                 <div class="card border-0 shadow-s rounded-2">
                   <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="product" :style="{backgroundImage:`url(${item.src})`}" style="background-repeat: no-repeat; height: 200px; width: 100%; background-size:cover; border-radius: 1rem 1rem 0 0;">
                   <div class="card-body">
                     <div class="row">
                       <div class="col text-start">
                         <p class="mb-0 fw-bold text-truncate">{{item.name}}</p>
-                        <p class="mb-0 text-muted" v-for="itemss in items.data[0].categoryList" v-if="itemss.idCategory == item.category">{{itemss.categoryName}}</p>
-                        <h4 class="mb-0 fw-bold text-primary">Rp200.000</h4>
+                        <span v-for="itemss in items.data[0].categoryList" v-if="itemss.idCategory == item.category">
+                          <p class="mb-0 text-muted">{{itemss.categoryName}}</p>
+                          <h4 class="mb-0 fw-bold text-primary">Rp{{itemss.categoryPrice}}</h4>
+                        </span>
                       </div>
                     </div>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p>{{item.description}}</p>
                     <div class="text-center">
                       <a class="btn btn-primary-s fw-bold rounded-3 px-4 mb-3" :href="item.url" target="_blank">Lihat Langsung</a>
                       <a class="btn btn-primary fw-bold rounded-3 px-4"
@@ -155,8 +157,34 @@
             </div>
           </div>
           <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-            <div class="text-center">
-              <h1>Comingsoon</h1>
+            <div class="row" v-cloak>
+              <div
+              class="col-xxl-3 col-lg-4 col-md-6 mb-4"
+              v-for="item in homeSort(items.data[0].client)" v-if="item.category == '5' && '6' ">
+                <div class="card border-0 shadow-s rounded-2">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="product" :style="{backgroundImage:`url(${item.src})`}" style="background-repeat: no-repeat; height: 200px; width: 100%; background-size:cover; border-radius: 1rem 1rem 0 0;">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col text-start">
+                        <p class="mb-0 fw-bold text-truncate">{{item.name}}</p>
+                        <span v-for="itemss in items.data[0].categoryList" v-if="itemss.idCategory == item.category">
+                          <p class="mb-0 text-muted">{{itemss.categoryName}}</p>
+                          <small v-if="itemss.idCategory == '5' && '6' " class="badge" style="background-color: var(--green-s); color: var(--bs-success);">Start From</small>
+                          <h4 class="mb-0 fw-bold text-primary">Rp{{itemss.categoryPrice}}</h4>
+                        </span>
+                      </div>
+                    </div>
+                    <hr>
+                    <p>{{item.description}}</p>
+                    <div class="text-center">
+                      <a class="btn btn-primary-s fw-bold rounded-3 px-4 mb-3" :href="item.url" target="_blank">Lihat Langsung</a>
+                      <a class="btn btn-primary fw-bold rounded-3 px-4"
+                      v-for="itemss in items.data[0].categoryList" v-if="itemss.idCategory == item.category"
+                      :href="'https://wa.me/+62895359771137?text=Saya%20ingin%20memesan%20website%20'+itemss.categoryName">Pesan Sekarang</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -179,7 +207,7 @@
       </div>
     </section>
     
-    <section class="section-tutorial">
+    <section class="section-tutorial d-none">
       <div class="bg-primary-s py-5">
         <div class="container">
           <h1 class="fw-bold text-center">Langkah Mudah Membuat Website</h1>
