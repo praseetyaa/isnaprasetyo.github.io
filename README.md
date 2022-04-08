@@ -8,3 +8,6 @@
 [![willianrod's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=isnaprasetyo&theme=codeSTACKr)](https://spandiv.xyz/)
 <br><br>
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=praseetyaa&layout=compact&theme=codeSTACKr)](https://spandiv.xyz)
+<br><br>
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=praseetyaa&repo=spandiv-press&theme=codeSTACKr)](https://github.com/anuraghazra/github-readme-stats)
+[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=praseetyaa&repo=akuntansionline&theme=codeSTACKr)](https://github.com/anuraghazra/github-readme-stats)
